@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Time tracking App">
+    <meta name="keywords" content="time, hours, daily, monthly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="user">
+            <div class="identity">
+            <img class="user-image" src="./images/momoh-yusuf.jpg" alt="momoh yusuf" width="70px">
+            <div class="description">
+            <p >Report For</p>
+            <h2 >Momoh Yusuf</h2>
+            </div>
+            </div>
+            <div class="time">
+            <p onclick="dailyToggle()" class="period">Daily</p>
+            <p onclick="weeklyToggle()" class="period">Weekly</p>
+            <p onclick="monthlyToggle()" class="period">Monthly</p>
+            </div>
+        </div>
+     
+    
+        <div class="work-data">
+            <div id="work-icon">
+            <img src="./images/icon-work.svg" alt="work" width="30px" class="icon-work">
+            </div>
+            <div class="content">
+            <div class="title">
+            <h4>Work</h4>
+             <img src="./images/icon-ellipsis.svg" alt="elipsis-icon">
+             </div>
+            <div class="small-screen">
+            <h1 id="currentWk">32hrs</h1>
+            <p  id="previousWk">last Week 36hrs</p>
+            </div>
+            </div>
+        </div>
+        <div class="play-data">
+            <div id="play-icon">
+            <img src="./images/icon-play.svg" alt="play" width="30px">
+            </div>
+            <div class="content">
+            <div class="title">
+            <h4>Play</h4>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis-icon">
+            </div>
+            <div class="small-screen">
+            <h1 id="currentPl">10hrs</h1>
+            <p id="previousPl">last Week 8hrs</p>
+            </div>
+            </div>
+        </div>
+        <div class="study-data">
+            <div id="study-icon">
+            <img src="./images/icon-study.svg" alt="study" width="30px">
+            </div>
+            <div class="content">
+            <div class="title">
+            <h4>Study</h4>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis-icon">
+            </div>
+            <div class="small-screen">
+            <h1 id="currentSt">4hrs</h1>
+            <p id="previousSt">last Week 7hrs</p>
+            </div>
+            </div>
+        </div>
+        <div class="excercise-data">
+            <div id="excercise-icon">
+            <img src="./images/icon-exercise.svg" alt="excecise" width="35px">
+            </div>
+            <div class="content">
+            <div class="title">
+            <h4>Excercise</h4>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis-icon">
+            </div>
+            <div class="small-screen">
+            <h1 id="currentEx">4hrs</h1>
+            <p id="previousEx">last Week 5hrs</p>
+            </div>
+            </div>
+        </div>
+        <div class="social-data">
+            <div id="social-icon">
+            <img src="./images/icon-social.svg" alt="social" width="22px">
+            </div>
+            <div class="content">
+              <div class="title">   
+            <h4>Social </h4>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis-icon">
+              </div>
+              <div class="small-screen">
+            <h1 id="currentSl">5hrs</h1>
+            <p id="previousSl">last Week 10hrs</p>
+            </div>
+            </div>
+        </div>
+        <div class="self-care-data">
+            <div id="self-care-icon">
+            <img src="./images//icon-self-care.svg" alt="Self-Care" width="30px">
+            </div>
+            <div class="content">
+            <div class="title">
+            <h4>Self-Care</h4>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis-icon">
+            </div>
+            <div class="small-screen">
+            <h1 id="currentSf">2hrs</h1>
+            <p id="previousSf">last Week 2hrs</p>
+            </div>
+            </div>
+        </div>
+
+        
+<p>Challenge by Frontend Mentor Coded by <b>Starkweb</b></p>
+   </div>
+            <script src="script.js"></script>
+</body>
+</html>
